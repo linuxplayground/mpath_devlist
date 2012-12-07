@@ -1,4 +1,21 @@
 #!/usr/bin/env perl
+
+## mpath_devlist
+##
+## Simple perl script that parses the output of multipath -ll
+## and displays the results with one line per path showing number
+## of active paths to storage.
+
+## Assumes that there are 4 paths to each mapped device and reports
+## OK or PROBLEM if less than 4 paths are found.
+
+## Author: David Latham <david@sitedesign.co.nz>
+##         http://david-latham.blogspot.com
+
+## License: GPL version 2
+
+# vim:expandtab:ts=4:softtabstop=4:autoindent
+
 use Term::ANSIColor;
 
  = 0;
